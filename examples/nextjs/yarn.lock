@@ -2489,8 +2489,10 @@ raw-body@2.4.1:
     iconv-lite "0.4.24"
     unpipe "1.0.0"
 
-react-clutch-badge@../../:
-  version "1.0.0"
+react-clutch-badge@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/react-clutch-badge/-/react-clutch-badge-1.5.0.tgz#a7c3b11ed06f6f3682dff886a5cf74366b164ae6"
+  integrity sha512-8O6NEpn1kZw17CCxZZ34htpr6eHp0suBl6KfiEzT4Cj23GsLxTnJZEC4UiTQH6FpTKe2D+DXpMEs8L00S3l+7w==
   dependencies:
     cross-fetch "^3.1.4"
 
