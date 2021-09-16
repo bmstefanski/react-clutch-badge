@@ -8,6 +8,9 @@
   <a href="https://www.npmjs.com/package/react-clutch-badge"><img alt="npm version badge" src="https://img.shields.io/npm/v/react-clutch-badge"></a>  
   <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/min/react-clutch-badge">
   <img alt="license badge" src="https://img.shields.io/npm/l/react-clutch-badge">
+
+Example: https://react-clutch-badge.vercel.app/
+
 </div>
 
 <br />
