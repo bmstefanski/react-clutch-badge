@@ -16,12 +16,19 @@ export interface StarProps {
 
 export function ClutchBadge({ reviewsCount, starsCount }: ClutchReviewsData) {
   const starsMarkup = Array.from({ length: 5 }, (_, idx) => {
-    return <Star key={idx} colored={idx + 1 <= Math.floor(starsCount)} />
+    return <Star key={idx} colored={idx + 1 <= Math.round(starsCount)} />
   })
 
   return (
-    <div className="clutch-badge-container" style={{ display: 'flex', padding: '12px 5px 0px 5px' }}>
-      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 38 42">
+    <div
+      className="clutch-badge-container"
+      style={{
+        display: 'flex',
+        padding: '12px 5px 0px 5px',
+        alignItems: 'center',
+      }}
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" width="36" height="40" viewBox="0 0 28 32" preserveAspectRatio="none">
         <g opacity="1" fill="#152F38">
           <path
             d="M21.75 22.306c-1.652 1.46-3.789 2.252-5.993 2.222-5.08 0-8.811-3.73-8.811-8.85 0-5.12 3.612-8.693 8.81-8.693 2.21-.03 4.355.747 6.034 2.183l1.111.953 4.922-4.922-1.23-1.15C23.614 1.388 19.747-.057 15.756 0 6.628 0 0 6.589 0 15.638c0 9.05 6.787 15.836 15.757 15.836 4.03.054 7.93-1.42 10.915-4.128l1.19-1.11-5-4.922-1.112.992z"
@@ -35,15 +42,14 @@ export function ClutchBadge({ reviewsCount, starsCount }: ClutchReviewsData) {
         style={{
           display: 'flex',
           flexDirection: 'column',
-          marginLeft: '-3px',
-          marginTop: '2px',
           justifyContent: 'space-between',
+          marginLeft: '5px',
         }}
       >
         <div className="clutch-badge-content-stars" style={{ display: 'flex' }}>
           {starsMarkup}
         </div>
-        <span className="clutch-badge-content-text" style={{ marginLeft: '3px', marginTop: '8px', fontSize: '13px' }}>
+        <span className="clutch-badge-content-text" style={{ marginTop: '8px', fontSize: '13px' }}>
           {reviewsCount} REVIEWS
         </span>
       </div>
@@ -53,7 +59,14 @@ export function ClutchBadge({ reviewsCount, starsCount }: ClutchReviewsData) {
 
 export function Star({ colored }: StarProps) {
   return (
-    <div style={{ marginRight: '5px', width: '13px', height: '13px' }}>
+    <div
+      style={{
+        marginRight: '5px',
+        width: '13px',
+        height: '13px',
+        marginTop: '5px',
+      }}
+    >
       <svg width="17" height="17" viewBox="0 0 17 17">
         <path
           fill={colored ? '#FC3C2E' : '#d3cbcb'}

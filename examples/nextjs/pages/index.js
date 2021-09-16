@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <ClutchBadge reviewsCount={13} starsCount={5} />
+        <ClutchBadge reviewsCount={13} starsCount={4} />
       </main>
 
       <footer className={styles.footer}>
