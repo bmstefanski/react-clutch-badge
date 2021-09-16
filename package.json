@@ -1,0 +1,41 @@
+{
+  "name": "react-clutch-badge",
+  "version": "1.0.2",
+  "description": "",
+  "source": "src/index.tsx",
+  "main": "./lib/react-clutch-badge.cjs",
+  "module": "./lib/react-clutch-badge.module.js",
+  "unpkg": "./lib/react-clutch-badge.umd.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "start:nextjs": "cd examples/nextjs && yarn dev",
+    "prepublishOnly": "npm run build",
+    "prebuild": "rimraf lib",
+    "build": "microbundle --jsx React.createElement",
+    "build:watch": "microbundle watch --jsx React.createElement"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmstefanski/react-clutch-badge.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bmstefanski/react-clutch-badge/issues"
+  },
+  "homepage": "https://github.com/bmstefanski/react-clutch-badge#readme",
+  "dependencies": {
+    "cross-fetch": "^3.1.4"
+  },
+  "peerDependencies": {
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.21",
+    "microbundle": "^0.13.3"
+  }
+}
