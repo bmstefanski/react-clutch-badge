@@ -63,6 +63,7 @@ export function BigLogoBadge({ classNamePrefix, reviewsCount, starsCount }: Clut
             fontSize: '14px',
             textAlign: 'right',
             lineHeight: 1,
+            letterSpacing: '0.1em',
           }}
         >
           {reviewsCount} REVIEWS

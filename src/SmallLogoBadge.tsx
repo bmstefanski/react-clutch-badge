@@ -38,7 +38,7 @@ export function SmallLogoBadge({ classNamePrefix, reviewsCount, starsCount }: Cl
         </div>
         <span
           className={classNamePrefix + '-content-text'}
-          style={{ marginTop: '8px', fontSize: '13px', textAlign: 'right' }}
+          style={{ marginTop: '8px', fontSize: '13px', textAlign: 'right', letterSpacing: '0.1em' }}
         >
           {reviewsCount} REVIEWS
         </span>
