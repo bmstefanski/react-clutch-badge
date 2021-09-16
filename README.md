@@ -6,7 +6,7 @@
 
 <div align="center">
   <a href="https://www.npmjs.com/package/react-clutch-badge"><img alt="npm version badge" src="https://img.shields.io/npm/v/react-clutch-badge"></a>  
-  <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/min/react-clutch-badge">
+  <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/react-clutch-badge">
   <img alt="license badge" src="https://img.shields.io/npm/l/react-clutch-badge">
 
 Example: https://react-clutch-badge.vercel.app/
@@ -19,6 +19,8 @@ Example: https://react-clutch-badge.vercel.app/
 
 Unofficial library for easy and performant integration with clutch.co.
 
+- [x] 🔗 Isomorphic (works on every platform - Web (Client, Server), Mobile)
+- [x] 🧑🏻‍💻 Only one dependency ([cross-fetch](https://github.com/lquixada/cross-fetch))
 - [x] 📸 Non-flickering
 - [x] 🖼 Not-based on iframe
 - [x] 👮🏼‍♂️ Customizable badges
