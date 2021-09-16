@@ -54,7 +54,7 @@ export function BigLogoBadge({ classNamePrefix, reviewsCount, starsCount }: Clut
           height: '50px',
         }}
       >
-        <div className={classNamePrefix + '-content-stars'} style={{ display: 'flex' }}>
+        <div className={classNamePrefix + '-content-stars'} style={{ display: 'flex', justifyContent: 'flex-end' }}>
           {starsMarkup}
         </div>
         <span

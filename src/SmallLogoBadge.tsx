@@ -33,7 +33,7 @@ export function SmallLogoBadge({ classNamePrefix, reviewsCount, starsCount }: Cl
           marginLeft: '10px',
         }}
       >
-        <div className={classNamePrefix + '-content-stars'} style={{ display: 'flex' }}>
+        <div className={classNamePrefix + '-content-stars'} style={{ display: 'flex', justifyContent: 'flex-end' }}>
           {starsMarkup}
         </div>
         <span
